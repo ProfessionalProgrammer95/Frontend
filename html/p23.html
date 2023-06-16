@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width:600px;
+        }
+        table,tr,td,th{
+            border: 2px solid #222;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <caption>Registration Form</caption>
+    <form action="" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <th>Enter your First Name</th>
+                <td><input type="text" name="firstname" id="firstname" placeholder="First Name" value="Chiru"></td>
+            </tr>
+            <tr>
+                <th>Enter your Last Name</th>
+                <td><input type="text" name="lastname" id="lastname" placeholder="Last Name" value="Reddy"></td>
+            </tr>
+            <tr>
+                <th>Enter your Passwords</th>
+                <td><input type="password" name="pass" id="pass"></td>
+            </tr>
+            <tr>
+                <th>Enter your Email</th>
+                <td><input type="email" name="mail" id="mail"></td>
+            </tr>
+            <tr>
+                <th>Enter your Mobile Number</th>
+                <td><input type="number" name="mobilenumber" id="mobilenumber"></td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td><textarea name="address" id="address" cols="30" rows="7"></textarea></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td><input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                    <input type="radio" name="gender" value="transgender">Transgender
+                </td>
+            </tr>
+            <tr>
+                <th>Select your hobbies</th>
+                <td>
+                <label>hobby1 <input type="checkbox" name="hobby1" value="reading"></label>
+                <label>hobby2 <input type="checkbox" name="hobby2" value="riding"></label>
+                <label>hobby3<input type="checkbox" name="hobby3" value="dancing"></label></td>
+            </tr>
+            <tr>
+                <th>Date Of Birth</th>
+                <td><input type="date" name="dob" id="dob"></td>
+            </tr>
+            <tr>
+                <th>Select your country</th>
+                <td><select name="country" multiple="multiple">
+                    <option value="India">India</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="SirLanka">Sirlanka</option>
+                    <option value="England">England</option>
+                    <option value="London">London</option>
+                </select></td>
+            </tr>
+            <tr>
+                <th>Upload File</th>
+                <td><input type="file" name="upload" id="upload"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Sava My Data">
+                    <input type="reset" value="Reset Data">
+                </td>
+            </tr>
+        </table>
+    </form> 
+</body>
+</html>

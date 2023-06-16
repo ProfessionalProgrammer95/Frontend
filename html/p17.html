@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <!-- action=> server file /path()
+    method=> post-> hide the data
+             get->display the data in url address bar
+    autocomplete=> clear the history-> off/on (default)
+    enctype=> encrypt type -> file uoloading (,multipart/form-data)
+    required=> mandatory fill the input field( to recogined the empty) -->
+    <form action="https://localhost/server.php" method="get" autocomplete="off">
+        <fieldset>
+            <legend>login form</legend>
+            <label for="user">username</label>
+            <input type="text" name="user" id="user" value="admin@gmail.com" readonly required>
+            <br><br>
+            <label for="pass">password</label>
+            <input type="password" name="pass" id="pass" value="" placeholder="password is of 6 char and above" required>
+            <br><br>
+            <input type="submit" value="sign in">
+            <input type="reset" value="clear">
+        </fieldset>
+    </form>
+    <!-- label=>label for input tag
+    type=>the type of input 
+    name=>carry the value entered inside the input 
+    value=>default value
+    placeholder=>hint for user
+    required=> mandatory input 
+    readonly=>restricts the user to edit the input -->
+</body>
+</html>
