@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div a[target]{
+            background-color: slateblue;
+            color: #fff;
+            text-decoration: none;
+            padding: 20px 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>attribute selectors</h3>
+    <!-- [attr][attr=value]it is applicable those words have white space[attr~=value]the value just must be present[attr|=value]it is applicable to exact value[attr$=value]it targets last element[attr*=value] it ia applicable to all elements-->
+    <h1>[attr]</h1>
+    <div>
+        <a href="p1.html" target="_self">home</a>
+    <a href="p2.html" target="_parent">menu</a>
+    <a href="p3.html" target="_top">about us</a>
+    <a href="https://gmail.com" target="_blank">login</a>
+    </div>
+</body>
+</html>
