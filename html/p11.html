@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,th,td{
+            border: 2px double #000;
+            text-align: center;
+        }
+        th,td{
+            padding: 20px;
+        }
+        th{
+            background-color: darkgrey;
+            color: #fff;
+        }
+    </style>
+
+</head>
+<body>
+    <h3>table</h3>
+    <table>
+        <tr>
+            <th>product</th>
+            <th>flavours</th>
+        </tr>
+        <tr>
+            <td rowspan="3">milk</td>
+            <td>almond</td>
+        </tr>
+        <tr><td>mango</td></tr>
+        <tr><td>chocolates</td></tr>
+        <tr><td colspan="2">these are the exclusive flavours</td></tr>
+    </table>
+</body>
+</html>
