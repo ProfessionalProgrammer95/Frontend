@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 20px;
+            counter-reset: ch;
+        }
+        h1::before{
+            counter-increment: ch;
+            content: counter(ch)".";
+        }
+        h3{
+            padding-left: 30px;
+        }
+        h1{
+            counter-reset: topic;
+        }
+        h3::before{
+            counter-increment: topic;
+            content: counter(ch)"." counter(topic)".";
+        }
+        h3{
+            counter-reset: subT;
+        }
+        h5{
+            padding-left: 60px;
+        }
+        h5::before{
+            counter-increment: subT;
+            content: counter(ch)"." counter(topic)"." counter(subT)" ";
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML</h1>
+        <h3>Header TAGS</h3>
+            <h5>h1-h6</h5>
+        <h3>Format Tags</h3>
+            <h5>paragragh</h5>
+            <h5>addresss</h5>
+            <h5>bold and strong</h5>
+        <h3>Link and Button tags</h3>
+        <h3>Table and List Tags</h3>
+    <h1>CSS</h1>
+        <h3>Selectors</h3>
+        <h3>Background</h3>
+        <h3>Color and Fonts</h3>
+            <h5>background-color</h5>
+            <h5>color</h5>
+            <h5>border-color</h5>
+            <h5>font-family</h5>
+        <h3>Overflow and opacity</h3>
+        <h3>Text and Float</h3>
+    <h1>JavaScript</h1>
+        <h3>Introduction</h3>
+        <h3>Operators</h3>
+        <h3>Conditional and topics</h3>
+        <h3>Arrays</h3>
+            <h5>Literal</h5>
+            <h5>Object</h5>
+            <h5>Json</h5>
+        <h3>Functions</h3>
+    <h1>React JS</h1>
+        <h3>React Components</h3>
+            <h5>Functional Components</h5>
+            <h5>Class Components</h5>
+            <h5>Const functional Components</h5>
+        <h3>Reacts Hooks</h3>
+        <h3>React Lifecycle Methods</h3>
+            <h5>Mounting</h5>
+            <h5>updating</h5>
+            <h5>UnMon</h5>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            padding: 20px;
+            counter-reset: ch;
+            border: 2px solid #222;
+        }
+        h2{
+            padding-left: 50px;
+            counter-reset: topic;
+        }
+        h2::before{
+            counter-increment: ch;
+            content: counter(ch)".";
+            color: orangered;
+        }
+        h4::before{
+            counter-increment: topic;
+            content: counter(ch)"." counter(topic)" ";
+            color: orange;
+        }
+        h4{
+            padding-left: 70px;
+            counter-reset: subT;
+        }
+        p{
+            padding-left: 90px;
+        }
+        p::before{
+            counter-increment: subT;
+            content: counter(ch)"." counter(topic)"." counter(subT)" ";
+            color:teal;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Table of content</h1>
+    <div class="container">
+        <h2>HTML</h2>
+            <h4>Header tags</h4>
+                <p>h1 tags</p>
+                <p>h2 tag</p>
+                <p>h3 tag</p>
+                <p>h4 tag</p>
+            <h4>Format Tags</h4>
+                <p>paragragh tag</p>
+                <p>bold tag</p>
+                <p>underline tag</p>
+            <h4>table</h4>
+            <h4>List</h4>
+                <p>Unorder list</p>
+                <p>order list</p>
+                <p>definition list</p>
+            <h4>Form</h4>
+        <h2>CSS</h2>
+            <h4>Colors</h4>
+                <p>hex code</p>
+                <p>color name</p>
+                <p>rgb function</p>
+                <p>rgba function</p>
+            <h4>Background </h4>
+            <h4>Font</h4>
+                <p>font family</p>
+                <p>font size</p>
+                <p>font weight</p>
+        <h2>JavaScript</h2>
+            <h4>Variables</h4>
+                <p>var keywords</p>
+                <p>let keyword</p>
+                <p>const keyword</p>
+            <h4>Operators</h4>
+            <h4>Conditional an LOoping</h4>
+                <p>if</p>
+                <p>if and else</p>
+                <p>if , else if and else</p>
+                <p>switch case</p>
+            <h4>Arrays</h4>
+        <h2>Jquery</h2>
+        <h2>Bootstrap</h2>
+    </div>
+</body>
+</html>
