@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+            grid-gap: 10px;
+        }
+        .gallery img{
+            max-width: 100%;
+        }
+        .gallery img:nth-child(odd){
+            grid-column: span 2;
+            grid-row: span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="./images/379.jpg" alt="">
+        <img src="./images/381.jpg" alt="">
+        <img src="./images/385.jpg" alt="">
+        <img src="./images/387.jpg" alt="">
+        <img src="./images/391.jpg" alt="">
+        <img src="./images/393.jpg" alt="">
+        <img src="./images/395.jpg" alt="">
+        <img src="./images/397.jpg" alt="">
+        <img src="./images/399.jpg" alt="">
+        <img src="./images/379.jpg" alt="">
+        <img src="./images/381.jpg" alt="">
+        <img src="./images/385.jpg" alt="">
+        <img src="./images/391.jpg" alt="">
+        <img src="./images/393.jpg" alt="">
+        <img src="./images/395.jpg" alt="">
+        <img src="./images/397.jpg" alt="">
+        <img src="./images/381.jpg" alt="">
+        <img src="./images/385.jpg" alt="">
+        <img src="./images/381.jpg" alt="">
+        <img src="./images/387.jpg" alt="">
+
+    </div>
+</body>
+</html>
