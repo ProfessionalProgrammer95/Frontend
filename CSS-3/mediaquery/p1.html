@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            overflow-x: hidden;
+        }
+        .container{
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height:100%;
+            background-color:slateblue ;
+            color: #fff;
+        }
+        .card{
+            max-width: 100%;
+            background-color: gold;
+            padding: 20px;
+            color: #222;
+            height: 300px;
+            margin: 10px;
+        }
+        /* mobileninput - 576px
+        tabs -1024px- input -576px
+        laptop/desktop 1440px -input -1024px
+        4k screens input - 1440px */
+        @media screen and (max-width:576px){
+            .container{
+                background-color: #ccc;
+                display: flex;
+                flex-direction: column;
+            }
+            .card{
+                background-color: deeppink;
+                color: #fff;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h3>header-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam obcaecati et ratione eum dicta fuga quidem, provident necessitatibus consequuntur omnis delectus voluptates numquam, quia expedita consequatur, aspernatur perferendis exercitationem!</p>
+        </div>
+        <div class="card">
+            <h3>header-1</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit enim voluptatibus pariatur, alias tempora nobis deleniti iusto commodi consequatur ab, neque officia laboriosam vitae aliquam quis, reiciendis voluptas! Cumque, nisi!</p>
+        </div>
+        <div class="card">
+            <h3>header-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae aut vero, nesciunt deserunt odit necessitatibus at dignissimos nemo repudiandae corporis pariatur! Eum sint quisquam quidem possimus alias minus inventore!</p>
+        </div>
+    </div>
+    
+</body>
+</html>

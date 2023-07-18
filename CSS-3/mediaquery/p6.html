@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* non retina screens are LCD screen */
+        @media only screen and (min-device-width:1200px)
+                           and (max-device-height:1600px)
+                           and (-webkit-min-device-pixel-ratio:1){
+                            body{
+                                background-color: lightblue;
+                            }
+                           }
+        /* retina screens are LED screen */
+        @media only screen and (min-device-width:1200px)
+                           and (max-device-height:1600px)
+                           and (-webkit-min-device-pixel-ratio:2)
+                           and (min-resolution:192dpi){
+                            /* dpi => dots per inches 300dpi */
+                            body{
+                                background-color: lightgreen;
+                            }
+                           }
+    </style>
+</head>
+<body>
+    <h3>laptops,notebook and desktops</h3>
+</body>
+</html>
